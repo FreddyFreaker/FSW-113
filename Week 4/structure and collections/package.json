@@ -1,0 +1,24 @@
+{
+  "name": "FSW-113",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/FreddyFreaker/FSW-113.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddyFreaker/FSW-113/issues"
+  },
+  "homepage": "https://github.com/FreddyFreaker/FSW-113#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
