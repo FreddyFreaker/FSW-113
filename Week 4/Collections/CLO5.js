@@ -4,7 +4,7 @@ var students = [
     { name: "Sandy", dob: "01/01/2002" },
     { name: "Harry", dob: "01/01/2003" },
   
-    { name: "Mandy", dob: "01/01/2020" },strong 
+    { name: "Mandy", dob: "01/01/2020" }, 
 ];
   var studentToSearch = { name: "Mandy", dob: "01/01/2001" };
   var result = students.filter((student) => student.name == studentToSearch.name);

@@ -5,11 +5,11 @@ var students = [
     { name: "Harry", dob: "01/01/2003" },
   ];
   
-  var studentDetails = students.map((student) => {
+ 
+ var studentDetails = students.map((student) => {
     let newInfo = { ...student, name: student.name.toUpperCase(), college: "BU" };
     return newInfo;
   });
-
   for (var student of studentDetails) {
     const { name, dob: dateOfBirth, college } = student;
     console.log(
