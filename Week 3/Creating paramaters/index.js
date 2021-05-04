@@ -3,7 +3,7 @@ const starwarsData = {"name":"Luke Skywalker","height":"172","mass":"77","hair_c
 const items = starwarsData.length;
 
 const getData = (index, prop = "name") => {
-    console.log( JSON.stringify(starwarsData[index]))
+    
     return starwarsData
 }
 
@@ -14,19 +14,72 @@ var result = getData()
 var printProps = (...props) => {
     props.forEach(element => {
         console.log(element)
+    
+
+
     })
     
-    var param = document.getElementById("param")
-    var h2 = document.createElement("h2")
-
-    param.appendChild(h2)
+    
 
 
 }
+
+var select = document.getElementById("ParamId")
+
+
+
+document.getElementById("submit").addEventListener("click",function(){
+    
+
+
+    
+
+
+if(select.value === "name"){
+    const param = document.getElementById("param")
+    const h2 = document.createElement("h2")
+    
+    h2.textContent = `Name: ${name}`
+    param.appendChild(h2)
+    
+    printProps(name)
+
+}
+else if(select.value === "height"){
+    const param = document.getElementById("param")
+    const h2 = document.createElement("h2")
+    
+    h2.textContent = `Height: ${height}`
+    param.appendChild(h2)
+    
+    printProps(height)
+
+}
+else if(select.value === "mass"){
+    const param = document.getElementById("param")
+    const h2 = document.createElement("h2")
+    
+    h2.textContent = `Mass: ${mass}`
+    param.appendChild(h2)
+    
+    printProps(mass)
+}
+
+})
+
+
 
 var name = result.name
 var height =result.height
 var mass = result.mass
 
+//var param = document.getElementById("param")
+   // var h2 = document.createElement("h2")
+    //h2.textContent = `${name} || ${height} || ${mass}`
 
-printProps(name, height, mass)
+   // param.appendChild(h2)
+
+
+//printProps(name,height,mass)
+
+
