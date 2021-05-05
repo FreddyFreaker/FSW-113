@@ -112,6 +112,9 @@ var characters = [
     const dataName =() =>{
         characters.forEach(item => {
             console.log(item.name)
+            console.log(item.height)
+            console.log(item.films)
+
             const data = document.getElementById("data")
             const h1 = document.createElement("h1")
 
